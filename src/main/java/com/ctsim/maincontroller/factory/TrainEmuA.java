@@ -21,14 +21,6 @@ import com.ctsim.maincontroller.interfaces.ControlPanel;
  */
 public class TrainEmuA implements Train {
 
-//	public static final int MODE_OFF = 0;
-//	public static final int MODE_IDLE = 1;
-//	public static final int MODE_YARD_SR = 2;
-//	public static final int MODE_YARD_EOA = 3;
-//	public static final int MODE_MCS = 4;
-//	public static final int MODE_ATO = 5;
-//	public static final int MODE_ATB = 6;
-
 	public static final int MODE_IDLE = 0;
 	public static final int MODE_YARD_SR = 1;
 	public static final int MODE_AUTO = 4;
@@ -52,7 +44,6 @@ public class TrainEmuA implements Train {
 	private final ControlPanel trainModel2;
 	private final ControlPanel dmi;
 	private final ATC atc;
-//	private final RollingStock rollingStock;
 
 	private boolean isOn;
 
