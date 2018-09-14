@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devices>
+
+	<!-- Zoom Door -->
+	
+	<device id="F001">
+		<type>Motor</type>
+		<name>Door Motor</name>
+		<old_id>F001</old_id>
+	</device>
+
+	<device id="F002">
+		<type>Lamp</type>
+		<name>Interior Indicator Lamp</name>
+		<old_id>F002</old_id>
+	</device>
+
+	<device id="F003">
+		<type>Switch</type>
+		<name>PER Switch</name>
+		<old_id>F003</old_id>
+	</device>
+
+	<device id="F004">
+		<type>Switch</type>
+		<name>Key Switch</name>
+		<old_id>F004</old_id>
+	</device>
+	
+	<device id="F005">
+		<type>Switch</type>
+		<name>Disable Switch</name>
+		<old_id>F005</old_id>
+	</device>
+
+	<device id="F006">
+		<type>Switch</type>
+		<name>Lock Switch</name>
+		<old_id>F006</old_id>
+	</device>
+
+</devices>

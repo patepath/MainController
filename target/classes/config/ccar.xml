@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devices>
+
+	<!--  C-Car Control Panel -->
+	<device id="C301">
+		<type>Lamp</type>
+		<name>Lamp Door Control</name>
+		<old_id>C001</old_id>
+	</device>
+
+	<device id="C302">
+		<type>Lamp</type>
+		<name>Lamp BCU Fault</name>
+		<old_id>C002</old_id>
+	</device>
+
+	<device id="C304">
+		<type>Lamp</type>
+		<name>Lamp Low Aire Pressure</name>
+		<old_id>C004</old_id>
+	</device>
+
+	<device id="C305">
+		<type>Lamp</type>
+		<name>Lamp BATT. Charger</name>
+		<old_id>C005</old_id>
+	</device>
+
+	<device id="C306">
+		<type>Lamp</type>
+		<name>Lamp Aux Converter</name>
+		<old_id>C006</old_id>
+	</device>
+
+	<device id="C307">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 1</name>
+		<old_id>C007</old_id>
+	</device>
+
+	<device id="C310">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 2</name>
+		<old_id>C010</old_id>
+	</device>
+
+	<device id="C311">
+		<type>Lamp</type>
+		<name>Lamp BCU. F. Stored</name>
+		<old_id>C011</old_id>
+	</device>
+
+	<device id="C313">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C013</old_id>
+	</device>
+
+	<device id="C314">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C014</old_id>
+	</device>
+
+	<device id="C315">
+		<type>Lamp</type>
+		<name>Lamp Parking Brake Relesae</name>
+		<old_id>C015</old_id>
+	</device>
+
+	<device id="C316">
+		<type>Lamp</type>
+		<name>Lamp Brake ON</name>
+		<old_id>C016</old_id>
+	</device>
+
+	<device id="C318">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C019</old_id>
+	</device>
+
+	<device id="C319">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C020</old_id>
+	</device>
+
+	<device id="C320">
+		<type>Lamp</type>
+		<name>Lamp MCB Triped</name>
+		<old_id>C021</old_id>
+	</device>
+
+	<device id="C321">
+		<type>Lamp</type>
+		<name>Lamp MPIS in Isolated</name>
+		<old_id>C022</old_id>
+	</device>
+
+	<device id="C201">
+		<type>Switch</type>
+		<name>Switch Lamp Test</name>
+		<old_id>C101</old_id>
+	</device>
+
+	<device id="C101">
+		<type>Breaker</type>
+		<name>Battery Main Connector</name>
+		<old_id>C201</old_id>
+	</device>
+
+	<device id="C102">
+		<type>Breaker</type>
+		<name>Current Collector 750V. Monitoring</name>
+		<old_id>C202</old_id>
+	</device>
+
+	<device id="C103">
+		<type>Breaker</type>
+		<name>AUX. Inverter</name>
+		<old_id>C203</old_id>
+	</device>
+
+	<device id="C104">
+		<type>Breaker</type>
+		<name>BCU+BCU-P</name>
+		<old_id>C204</old_id>
+	</device>
+
+	<device id="C105">
+		<type>Breaker</type>
+		<name>Parking Brake Valve</name>
+		<old_id>C205</old_id>
+	</device>
+
+	<device id="C106">
+		<type>Breaker</type>
+		<name>Parking Brake Control</name>
+		<old_id>C206</old_id>
+	</device>
+
+	<device id="C107">
+		<type>Breaker</type>
+		<name>PNEUM Brake Cut Out</name>
+		<old_id>C207</old_id>
+	</device>
+
+	<device id="C108">
+		<type>Breaker</type>
+		<name>AUX. Inverter Air COUND. Control</name>
+		<old_id>C208</old_id>
+	</device>
+
+	<device id="C109">
+		<type>Breaker</type>
+		<name>Air Compressor Indication Lights</name>
+		<old_id>C209</old_id>
+	</device>
+
+	<device id="C110">
+		<type>Breaker</type>
+		<name>Emergency Brake</name>
+		<old_id>C210</old_id>
+	</device>
+
+	<device id="C111">
+		<type>Breaker</type>
+		<name>PA Central Unit</name>
+		<old_id>C211</old_id>
+	</device>
+
+	<device id="C112">
+		<type>Breaker</type>
+		<name>Light</name>
+		<old_id>C212</old_id>
+	</device>
+
+	<device id="C113">
+		<type>Breaker</type>
+		<name>Emergency Light</name>
+		<old_id>C213</old_id>
+	</device>
+
+	<device id="C114">
+		<type>Breaker</type>
+		<name>Air COND. Control 1</name>
+		<old_id>C214</old_id>
+	</device>
+
+	<device id="C115">
+		<type>Breaker</type>
+		<name>Air COND. Control 2</name>
+		<old_id>C215</old_id>
+	</device>
+
+	<device id="C116">
+		<type>Breaker</type>
+		<name>Door Supply 1</name>
+		<old_id>C216</old_id>
+	</device>
+
+	<device id="C117">
+		<type>Breaker</type>
+		<name>Door Supply 2</name>
+		<old_id>C217</old_id>
+	</device>
+
+	<device id="C118">
+		<type>Breaker</type>
+		<name>Door Control</name>
+		<old_id>C218</old_id>
+	</device>
+
+</devices>

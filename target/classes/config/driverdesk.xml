@@ -1,0 +1,389 @@
+<devices>
+
+	<!--  driver desk -->
+	<device id="D201">
+		<type>Switch</type>
+		<name>automatic reversing</name>
+		<old_id>D136</old_id>
+	</device>
+
+	<device id="D202">
+		<type>Switch</type>
+		<name>atc start</name>
+		<old_id>D133</old_id>
+	</device>
+ 
+	<device id="D203">
+		<type></type>
+		<name>Switch</name>
+		<old_id>D134</old_id>
+	</device>
+
+	<device id="D204">
+		<type>Switch</type>
+		<name>Door permissive</name>
+		<old_id>D135</old_id>
+	</device>
+
+	<device id="D205">
+		<type>Switch</type>
+		<name>open door</name>
+		<old_id>D125</old_id>
+	</device>
+
+	<device id="D206">
+		<type>Switch</type>
+		<name>close door</name>
+		<old_id>D126</old_id>
+	</device>
+
+	<device id="D207">
+		<type>Switch</type>
+		<name>ptt</name>
+		<old_id>D127</old_id>
+	</device>
+
+	<device id="D208">
+		<type>Switch</type>
+		<name>emergency intercom</name>
+		<old_id>D128</old_id>
+	</device>
+
+	<device id="D209">
+		<type>Switch</type>
+		<name>cab to cab</name>
+		<old_id>D129</old_id>
+	</device>
+
+	<device id="D210">
+		<type>Switch</type>
+		<name>cab to pa</name>
+		<old_id>D130</old_id>
+	</device>
+
+	<device id="D211">
+		<type>Switch</type>
+		<name>emergency stop</name>
+		<old_id>D132</old_id>
+	</device>
+
+	<device id="D216">
+		<type>Switch</type>
+		<name>general fault</name>
+		<old_id>D101</old_id>
+	</device>
+
+	<device id="D217">
+		<type></type>
+		<name></name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D218_OFF">
+		<type>Switch</type>
+		<name>parking brake</name>
+		<old_id>D102</old_id>
+	</device>
+
+	<device id="D218_ON">
+		<type>Switch</type>
+		<name>parking brake</name>
+		<old_id>D103</old_id>
+	</device>
+
+	<device id="D218_LIGHT">
+		<type>Lamp</type>
+		<name>parking brake lamp</name>
+		<old_id>D202</old_id>
+	</device>
+
+	<device id="D219">
+		<type>Switch</type>
+		<name>pis sound</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D220">
+		<type>Switch</type>
+		<name>electric uncouple off-on</name>
+		<old_id>D105</old_id>
+	</device>
+
+	<device id="D221">
+		<type>Switch</type>
+		<name>uncoupling</name>
+		<old_id>D106</old_id>
+	</device>
+
+	<device id="D222">
+		<type>Switch</type>
+		<name>pneumatic uncouple off-on</name>
+		<old_id>D107</old_id>
+	</device>
+
+	<device id="D223">
+		<type>Switch</type>
+		<name>head-neutral-tail</name>
+		<old_id>D108</old_id>
+	</device>
+
+	<device id="D224">
+		<type>Switch</type>
+		<name>Desk light</name>
+		<old_id>D110</old_id>
+	</device>
+
+	<device id="D225_OFF">
+		<type>Switch</type>
+		<name>saloon light</name>
+		<old_id>D111</old_id>
+	</device>
+
+	<device id="D225_ON">
+		<type>Switch</type>
+		<name>saloon light</name>
+		<old_id>D112</old_id>
+	</device>
+
+	<device id="D226">
+		<type>Switch</type>
+		<name>Dimiter</name>
+		<old_id>D114</old_id>
+	</device>
+
+	<device id="D227">
+		<type>Switch</type>
+		<name>cab light</name>
+		<old_id>D113</old_id>
+	</device>
+
+	<device id="D228">
+		<type>Switch</type>
+		<name>wind shied washer off-on</name>
+		<old_id>D115</old_id>
+	</device>
+
+	<device id="D229">
+		<type>Switch</type>
+		<name>Dim - bright</name>
+		<old_id>D116</old_id>
+	</device>
+
+	<device id="D230">
+		<type>Switch</type>
+		<name>wind shied wipper 0-1-2-3</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D231">
+		<type>Switch</type>
+		<name>cab ventilation 0-3-2-1</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D233">
+		<type>Switch</type>
+		<name>radio control button 1</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D234">
+		<type>Switch</type>
+		<name>radio control button 2</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D235">
+		<type>Switch</type>
+		<name>radio control button 3</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D236">
+		<type>Switch</type>
+		<name>radio control button 4</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D237">
+		<type>led</type>
+		<name>led psi 1</name>
+		<old_id>D207</old_id>
+	</device>
+
+	<device id="D238">
+		<type>led</type>
+		<name>led psi 2</name>
+		<old_id>D208</old_id>
+	</device>
+
+	<device id="D239">
+		<type>lamp</type>
+		<name>lamp desk light</name>
+		<old_id>D203</old_id>
+	</device>
+
+	<device id="D240">
+		<type>lamp</type>
+		<name>lamp saloon light</name>
+		<old_id>D204</old_id>
+	</device>
+
+	<device id="D241">
+		<type>lamp</type>
+		<name>lamp dimiter</name>
+		<old_id>D205</old_id>
+	</device>
+
+	<device id="D242">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D206</old_id>
+	</device>
+
+	<device id="D243">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D201</old_id>
+	</device>
+
+	<device id="D244">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D202</old_id>
+	</device>
+	
+	<device id="D245">
+		<type>lamp</type>
+		<name>lamp head</name>
+		<old_id>D226</old_id>
+	</device>
+	
+	<device id="D246">
+		<type>lamp</type>
+		<name>lamp tail</name>
+		<old_id>D227</old_id>
+	</device>
+
+	<device id="D247">
+		<type>lamp</type>
+		<name>lamp atc start</name>
+		<old_id>D209</old_id>
+	</device>
+	
+	<device id="D248">
+		<type>lamp</type>
+		<name>lamp general fault</name>
+		<old_id>D201</old_id>
+	</device>
+	
+	<device id="D249">
+		<type>lamp</type>
+		<name>lamp emergency intercom</name>
+		<old_id>D219</old_id>
+	</device>
+	
+	<device id="D250">
+		<type>lamp</type>
+		<name>lamp door open</name>
+		<old_id>D217</old_id>
+	</device>
+	
+	<device id="D251">
+		<type>lamp</type>
+		<name>lamp door close</name>
+		<old_id>D218</old_id>
+	</device>
+	
+	<device id="D252">
+		<type>lamp</type>
+		<name>lamp door close</name>
+		<old_id>D220</old_id>
+	</device>
+	
+	<device id="D254">
+		<type>lamp</type>
+		<name>lamp tail</name>
+		<old_id>D222</old_id>
+	</device>
+	
+	<device id="D255">
+		<type>lamp</type>
+		<name>lamp head</name>
+		<old_id>D223</old_id>
+	</device>
+	
+	<device id="D299">
+		<type>lamp</type>
+		<name>lamp all</name>
+		<old_id>D299</old_id>
+	</device>
+
+	<device id="D401">
+		<type>meter</type>
+		<name>speedo meter</name>
+		<old_id>D004</old_id>
+	</device>
+
+	<device id="D402">
+		<type>meter</type>
+		<name>volt meter</name>
+		<old_id>D003</old_id>
+	</device>
+
+	<device id="D403">
+		<type>meter</type>
+		<name>air pressure</name>
+		<old_id>D002</old_id>
+	</device>
+
+	<device id="D404">
+		<type>meter</type>
+		<name>air pressure</name>
+		<old_id>D001</old_id>
+	</device>
+
+	<device id="D410">
+		<type>Key</type>
+		<name>Key Off</name>
+		<old_id>D146</old_id>
+	</device>
+
+	<device id="D411">
+		<type>Key</type>
+		<name>Key Select</name>
+		<old_id>D147</old_id>
+	</device>
+
+	<device id="D412">
+		<type>Key</type>
+		<name>Key ON</name>
+		<old_id>D148</old_id>
+	</device>
+
+	<device id="D413">
+		<type>Key</type>
+		<name>Mode RV/0</name>
+		<old_id>D141</old_id>
+	</device>
+
+	<device id="D414">
+		<type>Key</type>
+		<name>Mode F</name>
+		<old_id>D142</old_id>
+	</device>
+
+	<device id="D415">
+		<type>Key</type>
+		<name>Mode WM</name>
+		<old_id>D143</old_id>
+	</device>
+
+	<device id="D416">
+		<type>Key</type>
+		<name>Mode RM2</name>
+		<old_id>D144</old_id>
+	</device>
+
+</devices>
+

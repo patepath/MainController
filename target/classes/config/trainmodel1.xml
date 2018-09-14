@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devices>
+
+	<!--  Train Model 1  -->
+
+	<!-- Door -->
+	<device id="E099">
+		<type>Door</type>
+		<name>All</name>
+		<old_id>E099</old_id>
+	</device>
+
+	<device id="E098">
+		<type>Door</type>
+		<name>Left</name>
+		<old_id>E098</old_id>
+	</device>
+
+	<device id="E097">
+		<type>Door</type>
+		<name>Right</name>
+		<old_id>E098</old_id>
+	</device>
+
+	<device id="E096">
+		<type>Door</type>
+		<name>No.1 - No.8</name>
+		<old_id>E096</old_id>
+	</device>
+
+	<device id="E095">
+		<type>Door</type>
+		<name>No.9 - No.16</name>
+		<old_id>E095</old_id>
+	</device>
+
+	<device id="E094">
+		<type>Door</type>
+		<name>No.17 - No.24</name>
+		<old_id>E094</old_id>
+	</device>
+
+	<device id="E001">
+		<type>Door</type>
+		<name>No. 1</name>
+		<old_id>E001</old_id>
+	</device>
+	
+	<device id="E002">
+		<type>Door</type>
+		<name>No. 2</name>
+		<old_id>E002</old_id>
+	</device>
+	
+	<device id="E003">
+		<type>Door</type>
+		<name>No. 3</name>
+		<old_id>E003</old_id>
+	</device>
+	
+	<device id="E004">
+		<type>Door</type>
+		<name>No. 4</name>
+		<old_id>E004</old_id>
+	</device>
+	
+	<device id="E005">
+		<type>Door</type>
+		<name>No. 5</name>
+		<old_id>E005</old_id>
+	</device>
+	
+	<device id="E006">
+		<type>Door</type>
+		<name>No. 6</name>
+		<old_id>E006</old_id>
+	</device>
+	
+	<device id="E007">
+		<type>Door</type>
+		<name>No. 7</name>
+		<old_id>E007</old_id>
+	</device>
+	
+	<device id="E008">
+		<type>Door</type>
+		<name>No. 8</name>
+		<old_id>E008</old_id>
+	</device>
+	
+	<device id="E009">
+		<type>Door</type>
+		<name>No. 9</name>
+		<old_id>E009</old_id>
+	</device>
+	
+	<device id="E010">
+		<type>Door</type>
+		<name>No. 10</name>
+		<old_id>E010</old_id>
+	</device>
+	
+	<device id="E011">
+		<type>Door</type>
+		<name>No. 11</name>
+		<old_id>E012</old_id>
+	</device>
+	
+	<device id="E013">
+		<type>Door</type>
+		<name>No. 12</name>
+		<old_id>E012</old_id>
+	</device>
+	
+	<device id="E013">
+		<type>Door</type>
+		<name>No. 13</name>
+		<old_id>E013</old_id>
+	</device>
+	
+	<device id="E014">
+		<type>Door</type>
+		<name>No. 14</name>
+		<old_id>E014</old_id>
+	</device>
+	
+	<device id="E015">
+		<type>Door</type>
+		<name>No. 15</name>
+		<old_id>E015</old_id>
+	</device>
+	
+	<device id="E016">
+		<type>Door</type>
+		<name>No. 16</name>
+		<old_id>E016</old_id>
+	</device>
+	
+	<device id="E017">
+		<type>Door</type>
+		<name>No. 17</name>
+		<old_id>E017</old_id>
+	</device>
+	
+	<device id="E018">
+		<type>Door</type>
+		<name>No. 18</name>
+		<old_id>E018</old_id>
+	</device>
+	
+	<device id="E019">
+		<type>Door</type>
+		<name>No. 19</name>
+		<old_id>E019</old_id>
+	</device>
+	
+	<device id="E020">
+		<type>Door</type>
+		<name>No. 20</name>
+		<old_id>E020</old_id>
+	</device>
+	
+	<device id="E021">
+		<type>Door</type>
+		<name>No. 21</name>
+		<old_id>E021</old_id>
+	</device>
+	
+	<device id="E022">
+		<type>Door</type>
+		<name>No. 22</name>
+		<old_id>E022</old_id>
+	</device>
+	
+	<device id="E023">
+		<type>Door</type>
+		<name>No. 23</name>
+		<old_id>E023</old_id>
+	</device>
+	
+	<device id="E024">
+		<type>Door</type>
+		<name>No. 24</name>
+		<old_id>E024</old_id>
+	</device>
+	
+	<!-- PER Switch -->
+	<device id="E201">
+		<type>PER</type>
+		<name>No. 1</name>
+		<old_id>E201</old_id>
+	</device>
+	
+	<device id="E202">
+		<type>PER</type>
+		<name>No. 2</name>
+		<old_id>E202</old_id>
+	</device>
+	
+	<device id="E203">
+		<type>PER</type>
+		<name>No. 3</name>
+		<old_id>E203</old_id>
+	</device>
+	
+	<device id="E204">
+		<type>PER</type>
+		<name>No. 4</name>
+		<old_id>E204</old_id>
+	</device>
+	
+	<device id="E205">
+		<type>PER</type>
+		<name>No. 5</name>
+		<old_id>E205</old_id>
+	</device>
+	
+	<device id="E206">
+		<type>PER</type>
+		<name>No. 6</name>
+		<old_id>E206</old_id>
+	</device>
+	
+	<device id="E207">
+		<type>PER</type>
+		<name>No. 7</name>
+		<old_id>E207</old_id>
+	</device>
+	
+	<device id="E208">
+		<type>PER</type>
+		<name>No. 8</name>
+		<old_id>E208</old_id>
+	</device>
+	
+	<device id="E328">
+		<type>Parking Brake</type>
+		<name>1/1</name>
+		<old_id>E328</old_id>
+	</device>
+	
+	<device id="E329">
+		<type>Parking Brake</type>
+		<name>1/2</name>
+		<old_id>E329</old_id>
+	</device>
+
+	<device id="E330">
+		<type>Valve B09</type>
+		<name>1/2</name>
+		<old_id>E330</old_id>
+	</device>
+
+	<device id="E331">
+		<type>Valve B09</type>
+		<name>1/2</name>
+		<old_id>E331</old_id>
+	</device>
+
+
+</devices>

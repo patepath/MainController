@@ -1,0 +1,190 @@
+<devices>
+
+	<!--  C1-Car Control Panel -->
+	<device id="K301">
+		<type>Lamp</type>
+		<name>Lamp Door Control</name>
+		<old_id>C001</old_id>
+	</device>
+
+	<device id="K302">
+		<type>Lamp</type>
+		<name>Lamp BCU Fault</name>
+		<old_id>C002</old_id>
+	</device>
+
+	<device id="K303">
+		<type>Spare</type>
+		<name>Spare</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="K304">
+		<type>Lamp</type>
+		<name>Lamp Low Aire Pressure</name>
+		<old_id>C003</old_id>
+	</device>
+
+	<device id="K306">
+		<type>Lamp</type>
+		<name>Lamp Aux Converter</name>
+		<old_id>C005</old_id>
+	</device>
+
+	<device id="K317">
+		<type>Lamp</type>
+		<name>Lamp Air COND. 1</name>
+		<old_id>C006</old_id>
+	</device>
+
+	<device id="K310">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 2</name>
+		<old_id>C007</old_id>
+	</device>
+
+	<device id="K311">
+		<type>Lamp</type>
+		<name>Lamp BCU. F. Stored</name>
+		<old_id>C008</old_id>
+	</device>
+
+	<device id="K313">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C009</old_id>
+	</device>
+
+	<device id="K314">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C010</old_id>
+	</device>
+
+	<device id="K315">
+		<type>Lamp</type>
+		<name>Lamp Parking Brake Relesae</name>
+		<old_id>C011</old_id>
+	</device>
+
+	<device id="K316">
+		<type>Lamp</type>
+		<name>Lamp Brake ON</name>
+		<old_id>C012</old_id>
+	</device>
+
+	<device id="K318">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C013</old_id>
+	</device>
+
+	<device id="K319">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C014</old_id>
+	</device>
+
+	<device id="K320">
+		<type>Lamp</type>
+		<name>Lamp MCB Triped</name>
+		<old_id>C015</old_id>
+	</device>
+
+	<device id="K321">
+		<type>Lamp</type>
+		<name>Lamp MPIS in Isolated</name>
+		<old_id>C016</old_id>
+	</device>
+
+	<device id="K201">
+		<type>Switch PB Square Black</type>
+		<name>Switch Lamp Test</name>
+		<old_id>C101</old_id>
+	</device>
+
+	<device id="K101">
+		<type>Breaker</type>
+		<name>Breaker CONTACTORS MORNITORING</name>
+		<old_id>C201</old_id>
+	</device>
+
+	<device id="K102">
+		<type>Breaker</type>
+		<name>Breaker AUX. INVERTER CONTROL SUPPLY</name>
+		<old_id>C202</old_id>
+	</device>
+
+	<device id="K103">
+		<type>Breaker</type>
+		<name>Breaker RIO VAVLE</name>
+		<old_id>C203</old_id>
+	</device>
+
+	<device id="K104">
+		<type>Breaker</type>
+		<name>Breaker GATEWAY VALVE</name>
+		<old_id>C204</old_id>
+	</device>
+
+	<device id="K105">
+		<type>Breaker</type>
+		<name>Breaker PNEUMATIC BRAKE CUT OUT</name>
+		<old_id>C206</old_id>
+	</device>
+
+	<device id="K107">
+		<type>Breaker</type>
+		<name>Breaker AUX. INV. MESSAGES</name>
+		<old_id>C207</old_id>
+	</device>
+
+	<device id="K108">
+		<type>Breaker</type>
+		<name>Breaker AUXILIARIES</name>
+		<old_id>C208</old_id>
+	</device>
+
+	<device id="K109">
+		<type>Breaker</type>
+		<name>Breaker SALOON LIGHT</name>
+		<old_id>C209</old_id>
+	</device>
+
+	<device id="K110">
+		<type>Breaker</type>
+		<name>Breaker EMERGENCY LIGHT</name>
+		<old_id>C210</old_id>
+	</device>
+
+	<device id="K111">
+		<type>Breaker</type>
+		<name>Breaker AIR CONDITION CONTROL</name>
+		<old_id>C211</old_id>
+	</device>
+
+	<device id="K112">
+		<type>Breaker</type>
+		<name>Breaker EMERGENCY VENTILATION</name>
+		<old_id>C212</old_id>
+	</device>
+
+	<device id="K113">
+		<type>Breaker</type>
+		<name>Breaker DOOR SUPPLY 1</name>
+		<old_id>C213</old_id>
+	</device>
+
+	<device id="K114">
+		<type>Breaker</type>
+		<name>Breaker DOOR SUPPLY 2</name>
+		<old_id>C214</old_id>
+	</device>
+
+	<device id="K115">
+		<type>Breaker</type>
+		<name>Breaker DOOR LOOP</name>
+		<old_id>C215</old_id>
+	</device>
+
+</devices>

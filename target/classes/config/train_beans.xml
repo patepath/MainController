@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+    <bean id="acarControlPanel" class="com.ctsim.maincontroller.factory.ACarEmuA"></bean>
+    <bean id="ccarControlPanel" class="com.ctsim.maincontroller.factory.CCarEmuA"></bean>
+    <bean id="c1carControlPanel" class="com.ctsim.maincontroller.factory.C1CarEmuA"></bean>
+    <bean id="driverDesk" class="com.ctsim.maincontroller.factory.DriverDeskEmuA"></bean>
+    <bean id="lever" class="com.ctsim.maincontroller.factory.LeverEmuA"></bean>
+    <bean id="dummybogie" class="com.ctsim.maincontroller.factory.DummyBogieEmuA"></bean>
+    <bean id="zoomdoor" class="com.ctsim.maincontroller.factory.ZoomDoorEmuA"></bean>
+    <bean id="trainModel1" class="com.ctsim.maincontroller.factory.TrainModel1EmuA"></bean>
+    <bean id="trainModel2" class="com.ctsim.maincontroller.factory.TrainModel2EmuA"></bean>	
+    <bean id="atc" class="com.ctsim.maincontroller.factory.ATCEmuA"></bean>
+    <bean id="dmi" class="com.ctsim.maincontroller.factory.DMIEmuA"></bean>
+    <bean id="video" class="com.ctsim.maincontroller.factory.Video"></bean>
+    <bean id="rollingStock" class="com.ctsim.maincontroller.factory.RollingStock"></bean>
+</beans>

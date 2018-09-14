@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<devices>
+
+	<!--  A-Car Control Panel -->
+	<device id="A101">
+		<type>Main Breaker</type>
+		<name>Main Breaker</name>
+		<old_id>A001</old_id>
+	</device>
+
+	<device id="A102">
+		<type>Breaker</type>
+		<name>CURRENT COLLECTOR</name>
+		<old_id>A003</old_id>
+	</device>
+
+	<device id="A103">
+		<type>Breaker</type>
+		<name>TRAIN CONTROL 1</name>
+		<old_id>A004</old_id>
+	</device>
+
+	<device id="A104">
+		<type>Breaker</type>
+		<name>TRAIN CONTROL 2</name>
+		<old_id>A005</old_id>
+	</device>
+
+	<device id="A105">
+		<type>Breaker</type>
+		<name>110 V TRAC CONTAINER PROP. BLOWER</name>
+		<old_id>A006</old_id>
+	</device>
+
+	<device id="A106">
+		<type>Breaker</type>
+		<name>BCU+BCU-P</name>
+		<old_id>A007</old_id>
+	</device>
+
+	<device id="A107">
+		<type>Breaker</type>
+		<name>PARKING BRAKE VALVE</name>
+		<old_id>A008</old_id>
+	</device>
+
+	<device id="A108">
+		<type>Breaker</type>
+		<name>PARKING BRAKE CONTROL</name>
+		<old_id>A009</old_id>
+	</device>
+
+	<device id="A109">
+		<type>Breaker</type>
+		<name>PNEU BRAKE CUT OUT</name>
+		<old_id>A010</old_id>
+	</device>
+
+	<device id="A110">
+		<type>Breaker</type>
+		<name>ATC DISPLAY</name>
+		<old_id>A011</old_id>
+	</device>
+
+	<device id="A111">
+		<type>Breaker</type>
+		<name>INDICATION LIGHTS</name>
+		<old_id>A012</old_id>
+	</device>
+
+	<device id="A112">
+		<type>Breaker</type>
+		<name>SAFETY LOOP</name>
+		<old_id>A013</old_id>
+	</device>
+
+	<device id="A113">
+		<type>Breaker</type>
+		<name>COMMUNICATION</name>
+		<old_id>A014</old_id>
+	</device>
+
+	<device id="A114">
+		<type>Breaker</type>
+		<name>AUXILIARIES CONTROL</name>
+		<old_id>A015</old_id>
+	</device>
+
+	<device id="A115">
+		<type>Breaker</type>
+		<name>INSTRUMENTS 24 V</name>
+		<old_id>A016</old_id>
+	</device>
+
+	<device id="A116">
+		<type>Breaker</type>
+		<name>SOCKET AC 230 V</name>
+		<old_id>A017</old_id>
+	</device>
+
+	<device id="A117">
+		<type>Breaker</type>
+		<name>CAB BLOWER</name>
+		<old_id>A018</old_id>
+	</device>
+
+	<device id="A118">
+		<type>Breaker</type>
+		<name>PIS</name>
+		<old_id>A021</old_id>
+	</device>
+
+	<device id="A119">
+		<type>Breaker</type>
+		<name>HEAD LIGHT</name>
+		<old_id>A022</old_id>
+	</device>
+
+	<device id="A120">
+		<type>Breaker</type>
+		<name>LIGHTING CONTROL</name>
+		<old_id>A023</old_id>
+	</device>
+
+	<device id="A121">
+		<type>Breaker</type>
+		<name>LIGHT</name>
+		<old_id>A024</old_id>
+	</device>
+
+	<device id="A122">
+		<type>Breaker</type>
+		<name>EMERGENCY LIGHT</name>
+		<old_id>A025</old_id>
+	</device>
+
+	<device id="A123">
+		<type>Breaker</type>
+		<name>AIR COND. CONTROL 1</name>
+		<old_id>A026</old_id>
+	</device>
+
+	<device id="A124">
+		<type>Breaker</type>
+		<name>AIR COND. CONTROL 2</name>
+		<old_id>A027</old_id>
+	</device>
+
+	<device id="A125">
+		<type>Breaker</type>
+		<name>COUPLING CONTROL</name>
+		<old_id>A028</old_id>
+	</device>
+
+	<device id="A126">
+		<type>Breaker</type>
+		<name>PASS. INFORMATION</name>
+		<old_id>A029</old_id>
+	</device>
+
+	<device id="A127">
+		<type>Breaker</type>
+		<name>DOOR CONTROL 1</name>
+		<old_id>A030</old_id>
+	</device>
+
+	<device id="A128">
+		<type>Breaker</type>
+		<name>DOOR SUPPLY 1</name>
+		<old_id>A031</old_id>
+	</device>
+
+	<device id="A129">
+		<type>Breaker</type>
+		<name>DOOR SUPPLY 2</name>
+		<old_id>A032</old_id>
+	</device>
+
+	<device id="A130">
+		<type>Breaker</type>
+		<name>DOOR CONTROL 2</name>
+		<old_id>A033</old_id>
+	</device>
+
+	<device id="A131">
+		<type>Breaker</type>
+		<name>TAIL LIGHT</name>
+		<old_id>A034</old_id>
+	</device>
+
+	<device id="A132">
+		<type>Breaker</type>
+		<name>WASHER / WIPER HORN</name>
+		<old_id>A035</old_id>
+	</device>
+
+	<device id="A133">
+		<type>Breaker</type>
+		<name>INSTRUMENTS 110 V</name>
+		<old_id>A036</old_id>
+	</device>
+
+	<device id="A201">
+		<type>Switch By Pass</type>
+		<name>DOOR RELASE BYPASSED</name>
+		<old_id>A101</old_id>
+	</device>
+
+	<device id="A202">
+		<type>Switch By Pass</type>
+		<name>DOOR LOOP BYPASSED</name>
+		<old_id>A102</old_id>
+	</device>
+
+	<device id="A203">
+		<type>Switch By Pass</type>
+		<name>ATC FAULT SWITCH BYPASSED</name>
+		<old_id>A103</old_id>
+	</device>
+
+	<device id="A204">
+		<type>Switch By Pass</type>
+		<name>SAFETY LOOP BYPASSED</name>
+		<old_id>A104</old_id>
+	</device>
+
+	<device id="A205">
+		<type>Switch PB Permit</type>
+		<name>PA MASTER</name>
+		<old_id>A105</old_id>
+	</device>
+
+	<device id="A206">
+		<type>Switch PB Permit</type>
+		<name>FULL TRACTION EFFORT</name>
+		<old_id>A106</old_id>
+	</device>
+
+	<device id="A207">
+		<type>Switch Yes-No Black</type>
+		<name>ATO DOOR OPENING YES-NO</name>
+		<old_id>A107</old_id>
+	</device>
+
+	<device id="A208">
+		<type>Switch PB Square Black</type>
+		<name>LAMP TEST</name>
+		<old_id>A108</old_id>
+	</device>
+
+	<device id="A209">
+		<type>Switch Rotary Black</type>
+		<name>AIR CONDITIONING Rotary</name>
+		<old_id>A109</old_id>
+	</device>
+
+	<device id="A210">
+		<type>Switch Rotary Yellow</type>
+		<name>AIR RECIRCULATION Rotary</name>
+		<old_id>A111</old_id>
+	</device>
+
+	<device id="A211">
+		<type>Switch Rotary Black</type>
+		<name>CURRENT COLLECTOR SHOES Rotary</name>
+		<old_id>A113</old_id>
+	</device>
+
+	<device id="A212">
+		<type>Switch PB Permit</type>
+		<name>CLEAR LINE</name>
+		<old_id>A115</old_id>
+	</device>
+
+	<device id="A213">
+		<type>Switch Rotary Yellow</type>
+		<name>AUXILIARIES Equipment Rotary</name>
+		<old_id>A116</old_id>
+	</device>
+
+	<device id="A214">
+		<type>Switch PB Square Black</type>
+		<name>AUX. CONV. HELPSTART</name>
+		<old_id>A118</old_id>
+	</device>
+
+	<device id="A215">
+		<type>Spare</type>
+		<name>Spare</name>
+	</device>
+
+	<device id="A216">
+		<type>Spare</type>
+		<name>Spare</name>
+		<old_id>A249</old_id>
+	</device>
+
+	<device id="A217">
+		<type>Spare</type>
+		<name>Spare</name>
+		<old_id>A250</old_id>
+	</device>
+
+	<device id="A401">
+		<type>Buzzer</type>
+		<name>OVER SPEED</name>
+		<old_id>A253</old_id>
+	</device>
+
+	<device id="A402">
+		<type>Buzzer</type>
+		<name>GENERAL FAULT</name>
+		<old_id>A252</old_id>
+	</device>
+
+	<device id="A301">
+		<type>Lamp Red</type>
+		<name>PROP. SYS. FAULT</name>
+		<old_id>A201</old_id>
+	</device>
+
+	<device id="A302">
+		<type>Lamp Red</type>
+		<name>PROP. BLOWER</name>
+		<old_id>A202</old_id>
+	</device>
+
+	<device id="A303">
+		<type>Lamp Red</type>
+		<name>PROP. OVERHEAT</name>
+		<old_id>A203</old_id>
+	</device>
+
+	<device id="A304">
+		<type>Lamp Red</type>
+		<name>AUX. POW. SUPPLY</name>
+		<old_id>A204</old_id>
+	</device>
+
+	<device id="A305">
+		<type>Lamp Red</type>
+		<name>BCU FAULT</name>
+		<old_id>A205</old_id>
+	</device>
+
+	<device id="A306">
+		<type>Lamp Red</type>
+		<name>LOW AIR PRESS</name>
+		<old_id>A206</old_id>
+	</device>
+
+	<device id="A307">
+		<type>Lamp Red</type>
+		<name>PROP1. SYS. FAULT</name>
+		<old_id>A207</old_id>
+	</device>
+
+	<device id="A308">
+		<type>Lamp Red</type>
+		<name>PROP2. SYS. FAULT</name>
+		<old_id>A208</old_id>
+	</device>
+
+	<device id="A309">
+		<type>Lamp Red</type>
+		<name>PROP. BLOWER</name>
+		<old_id>A209</old_id>
+	</device>
+
+	<device id="A310">
+		<type>Lamp Red</type>
+		<name>PROP. OVERHEAT</name>
+		<old_id>A210</old_id>
+	</device>
+
+	<device id="A311">
+		<type>Lamp Red</type>
+		<name>BCU FAULT</name>
+		<old_id>A211</old_id>
+	</device>
+
+	<device id="A312">
+		<type>Lamp Red</type>
+		<name>LOW AIR PRESS</name>
+		<old_id>A221</old_id>
+	</device>
+
+	<device id="A313">
+		<type>Lamp Red</type>
+		<name>ATP FAULT</name>
+		<old_id>A213</old_id>
+	</device>
+
+	<device id="A314">
+		<type>Lamp Red</type>
+		<name>DOOR CONTROL</name>
+		<old_id>A214</old_id>
+	</device>
+
+	<device id="A315">
+		<type>Lamp Red</type>
+		<name>PA FAULT</name>
+		<old_id>A215</old_id>
+	</device>
+
+	<device id="A316">
+		<type>Lamp Red</type>
+		<name>AIR COND.</name>
+		<old_id>A216</old_id>
+	</device>
+
+	<device id="A317">
+		<type>Lamp Red</type>
+		<name>PASS. EMRGENCY</name>
+		<old_id>A217</old_id>
+	</device>
+
+	<device id="A318">
+		<type>Lamp Red</type>
+		<name>CONTACTORS</name>
+		<old_id>A218</old_id>
+	</device>
+
+	<device id="A319">
+		<type>Lamp Red</type>
+		<name>AIR COND.1</name>
+		<old_id>A219</old_id>
+	</device>
+
+	<device id="A320">
+		<type>Lamp Red</type>
+		<name>DOOR CONTROL</name>
+		<old_id>A220</old_id>
+	</device>
+
+	<device id="A321">
+		<type>Spare</type>
+		<name>Spare</name>
+	</device>
+
+	<device id="A322">
+		<type>Lamp Red</type>
+		<name>AIR COND.2</name>
+		<old_id>A221</old_id>
+	</device>
+
+	<device id="A323">
+		<type>Lamp Yellow</type>
+		<name>BRAKE ON</name>
+		<old_id>A222</old_id>
+	</device>
+
+	<device id="A324">
+		<type>Lamp Yellow</type>
+		<name>BRAKE RELEASE</name>
+		<old_id>A223</old_id>
+	</device>
+
+	<device id="A325">
+		<type>Lamp Yellow</type>
+		<name>BRAKE CUT-OUT</name>
+		<old_id>A224</old_id>
+	</device>
+
+	<device id="A326">
+		<type>Lamp Yellow</type>
+		<name>PROP. ISOLATED</name>
+		<old_id>A225</old_id>
+	</device>
+
+	<device id="A327">
+		<type>Lamp Yellow</type>
+		<name>SAFETY LOOP</name>
+		<old_id>A226</old_id>
+	</device>
+
+	<device id="A328">
+		<type>Lamp Yellow</type>
+		<name>TCU F. STORED</name>
+		<old_id>A227</old_id>
+	</device>
+
+	<device id="A329">
+		<type>Lamp Yellow</type>
+		<name>BCU F. STORED</name>
+		<old_id>A228</old_id>
+	</device>
+
+	<device id="A330">
+		<type>Lamp Yellow</type>
+		<name>BRAKE ON</name>
+		<old_id>A229</old_id>
+	</device>
+
+	<device id="A331">
+		<type>Lamp Yellow</type>
+		<name>PARK BR. RELEAS</name>
+		<old_id>A230</old_id>
+	</device>
+
+	<device id="A332">
+		<type>Lamp Yellow</type>
+		<name>BRAKE CUT-OUT</name>
+		<old_id>A231</old_id>
+	</device>
+
+	<device id="A333">
+		<type>Lamp Yellow</type>
+		<name>BRAKE CUT-OUT</name>
+		<old_id>A232</old_id>
+	</device>
+
+	<device id="A334">
+		<type>Lamp Yellow</type>
+		<name>TCU F. STORED</name>
+		<old_id>A233</old_id>
+	</device>
+
+	<device id="A335">
+		<type>Lamp Yellow</type>
+		<name>BCU F. STORED</name>
+		<old_id>A234</old_id>
+	</device>
+
+	<device id="A336">
+		<type>Lamp Yellow</type>
+		<name>HSCB OPEN</name>
+		<old_id>A235</old_id>
+	</device>
+
+	<device id="A337">
+		<type>Lamp Yellow</type>
+		<name>MPIS IN ISOLATED</name>
+		<old_id>A236</old_id>
+	</device>
+
+	<device id="A338">
+		<type>Lamp Yellow</type>
+		<name>BYPASSED</name>
+		<old_id>A237</old_id>
+	</device>
+
+	<device id="A339">
+		<type>Lamp Yellow</type>
+		<name>750 LOSS</name>
+		<old_id>A238</old_id>
+	</device>
+
+	<device id="A340">
+		<type>Lamp Yellow</type>
+		<name>UNIT COUPLED</name>
+		<old_id>A239</old_id>
+	</device>
+
+	<device id="A341">
+		<type>Lamp Yellow</type>
+		<name>MCB TRIPED</name>
+		<old_id>A240</old_id>
+	</device>
+
+	<device id="A342">
+		<type>Spear</type>
+		<name>Spear</name>
+	</device>
+
+	<device id="A343">
+		<type>Lamp Yellow</type>
+		<name>HSCB OPEN</name>
+		<old_id>A241</old_id>
+	</device>
+
+	<device id="A344">
+		<type>Lamp Yellow</type>
+		<name>MPIS IN ISOLATED</name>
+		<old_id>A242</old_id>
+	</device>
+
+	<device id="A345">
+		<type>Lamp Yellow</type>
+		<name>BRAKE RELEASED</name>
+		<old_id>A243</old_id>
+	</device>
+
+	<device id="A346">
+		<type>Lamp Yellow</type>
+		<name>BRAKE RELEASED</name>
+		<old_id>A244</old_id>
+	</device>
+
+	<device id="A347">
+		<type>Lamp Yellow</type>
+		<name>MCB TRIPED</name>
+		<old_id>A245</old_id>
+	</device>
+
+	<device id="A348">
+		<type>Spear</type>
+		<name>Spear</name>
+	</device>
+
+	<device id="A349">
+		<type>Lamp Yellow</type>
+		<name>PROP. ISOLATED</name>
+		<old_id>A246</old_id>
+	</device>
+
+	<device id="A350">
+		<type>Lamp Yellow</type>
+		<name>PROP. ISOLATED</name>
+		<old_id>A247</old_id>
+	</device>
+
+	<device id="A249">
+		<type>Lamp Switch Rotary Yellow</type>
+		<name>LAMP AIR RECIRCULATION ROTARY</name>
+		<old_id>A249</old_id>
+	</device>
+
+	<device id="A250">
+		<type>Lamp Switch Rotary Yellow</type>
+		<name>LAMP AUXILIARIES Equipment ROTARY</name>
+		<old_id>A250</old_id>
+	</device>
+
+	<!--  C-Car Control Panel -->
+	<device id="C301">
+		<type>Lamp</type>
+		<name>Lamp Door Control</name>
+		<old_id>C001</old_id>
+	</device>
+
+	<device id="C302">
+		<type>Lamp</type>
+		<name>Lamp BCU Fault</name>
+		<old_id>C002</old_id>
+	</device>
+
+	<device id="C304">
+		<type>Lamp</type>
+		<name>Lamp Low Aire Pressure</name>
+		<old_id>C004</old_id>
+	</device>
+
+	<device id="C305">
+		<type>Lamp</type>
+		<name>Lamp BATT. Charger</name>
+		<old_id>C005</old_id>
+	</device>
+
+	<device id="C306">
+		<type>Lamp</type>
+		<name>Lamp Aux Converter</name>
+		<old_id>C006</old_id>
+	</device>
+
+	<device id="C307">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 1</name>
+		<old_id>C007</old_id>
+	</device>
+
+	<device id="C310">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 2</name>
+		<old_id>C010</old_id>
+	</device>
+
+	<device id="C311">
+		<type>Lamp</type>
+		<name>Lamp BCU. F. Stored</name>
+		<old_id>C011</old_id>
+	</device>
+
+	<device id="C313">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C013</old_id>
+	</device>
+
+	<device id="C314">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C014</old_id>
+	</device>
+
+	<device id="C315">
+		<type>Lamp</type>
+		<name>Lamp Parking Brake Relesae</name>
+		<old_id>C015</old_id>
+	</device>
+
+	<device id="C316">
+		<type>Lamp</type>
+		<name>Lamp Brake ON</name>
+		<old_id>C016</old_id>
+	</device>
+
+	<device id="C318">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C019</old_id>
+	</device>
+
+	<device id="C319">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C020</old_id>
+	</device>
+
+	<device id="C320">
+		<type>Lamp</type>
+		<name>Lamp MCB Triped</name>
+		<old_id>C021</old_id>
+	</device>
+
+	<device id="C321">
+		<type>Lamp</type>
+		<name>Lamp MPIS in Isolated</name>
+		<old_id>C022</old_id>
+	</device>
+
+	<device id="C201">
+		<type>Switch PB Square Black</type>
+		<name>Switch Lamp Test</name>
+		<old_id>C101</old_id>
+	</device>
+
+	<device id="C101">
+		<type>Breaker</type>
+		<name>Breaker Battery Main Connector</name>
+		<old_id>C201</old_id>
+	</device>
+
+	<device id="C102">
+		<type>Breaker</type>
+		<name>Breaker Current Collector 750V. Monitoring</name>
+		<old_id>C202</old_id>
+	</device>
+
+	<device id="C103">
+		<type>Breaker</type>
+		<name>Breaker AUX. Inverter</name>
+		<old_id>C203</old_id>
+	</device>
+
+	<device id="C104">
+		<type>Breaker</type>
+		<name>Breaker BCU+BCU-P</name>
+		<old_id>C204</old_id>
+	</device>
+
+	<device id="C105">
+		<type>Breaker</type>
+		<name>Breaker Parking Brake Valve</name>
+		<old_id>C205</old_id>
+	</device>
+
+	<device id="C106">
+		<type>Breaker</type>
+		<name>Breaker Parking Brake Control</name>
+		<old_id>C206</old_id>
+	</device>
+
+	<device id="C107">
+		<type>Breaker</type>
+		<name>Breaker PNEUM Brake Cut Out</name>
+		<old_id>C207</old_id>
+	</device>
+
+	<device id="C108">
+		<type>Breaker</type>
+		<name>Breaker AUX. Inverter Air COUND. Control</name>
+		<old_id>C208</old_id>
+	</device>
+
+	<device id="C109">
+		<type>Breaker</type>
+		<name>Breaker Air Compressor Indication Lights</name>
+		<old_id>C209</old_id>
+	</device>
+
+	<device id="C110">
+		<type>Breaker</type>
+		<name>Breaker Emergency Brake</name>
+		<old_id>C210</old_id>
+	</device>
+
+	<device id="C111">
+		<type>Breaker</type>
+		<name>Breaker PA Central Unit</name>
+		<old_id>C211</old_id>
+	</device>
+
+	<device id="C112">
+		<type>Breaker</type>
+		<name>Breaker Light</name>
+		<old_id>C212</old_id>
+	</device>
+
+	<device id="C113">
+		<type>Breaker</type>
+		<name>Breaker Emergency Light</name>
+		<old_id>C213</old_id>
+	</device>
+
+	<device id="C114">
+		<type>Breaker</type>
+		<name>Breaker Air COND. Control 1</name>
+		<old_id>C214</old_id>
+	</device>
+
+	<device id="C115">
+		<type>Breaker</type>
+		<name>Breaker Air COND. Control 2</name>
+		<old_id>C215</old_id>
+	</device>
+
+	<device id="C116">
+		<type>Breaker</type>
+		<name>Breaker Door Supply 1</name>
+		<old_id>C216</old_id>
+	</device>
+
+	<device id="C117">
+		<type>Breaker</type>
+		<name>Breaker Door Supply 2</name>
+		<old_id>C217</old_id>
+	</device>
+
+	<device id="C118">
+		<type>Breaker</type>
+		<name>Breaker Door Control</name>
+		<old_id>C218</old_id>
+	</device>
+
+	<!--  C1-Car Control Panel -->
+	<device id="K301">
+		<type>Lamp</type>
+		<name>Lamp Door Control</name>
+		<old_id>C001</old_id>
+	</device>
+
+	<device id="K302">
+		<type>Lamp</type>
+		<name>Lamp BCU Fault</name>
+		<old_id>C002</old_id>
+	</device>
+
+	<device id="K303">
+		<type>Spare</type>
+		<name>Spare</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="K304">
+		<type>Lamp</type>
+		<name>Lamp Low Aire Pressure</name>
+		<old_id>C003</old_id>
+	</device>
+
+	<device id="K306">
+		<type>Lamp</type>
+		<name>Lamp Aux Converter</name>
+		<old_id>C005</old_id>
+	</device>
+
+	<device id="K317">
+		<type>Lamp</type>
+		<name>Lamp Air COND. 1</name>
+		<old_id>C006</old_id>
+	</device>
+
+	<device id="K310">
+		<type>Lamp</type>
+		<name>Lamp Aire COND. 2</name>
+		<old_id>C007</old_id>
+	</device>
+
+	<device id="K311">
+		<type>Lamp</type>
+		<name>Lamp BCU. F. Stored</name>
+		<old_id>C008</old_id>
+	</device>
+
+	<device id="K313">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C009</old_id>
+	</device>
+
+	<device id="K314">
+		<type>Lamp</type>
+		<name>Lamp Brake Cut Out</name>
+		<old_id>C010</old_id>
+	</device>
+
+	<device id="K315">
+		<type>Lamp</type>
+		<name>Lamp Parking Brake Relesae</name>
+		<old_id>C011</old_id>
+	</device>
+
+	<device id="K316">
+		<type>Lamp</type>
+		<name>Lamp Brake ON</name>
+		<old_id>C012</old_id>
+	</device>
+
+	<device id="K318">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C013</old_id>
+	</device>
+
+	<device id="K319">
+		<type>Lamp</type>
+		<name>Lamp Brake Released</name>
+		<old_id>C014</old_id>
+	</device>
+
+	<device id="K320">
+		<type>Lamp</type>
+		<name>Lamp MCB Triped</name>
+		<old_id>C015</old_id>
+	</device>
+
+	<device id="K321">
+		<type>Lamp</type>
+		<name>Lamp MPIS in Isolated</name>
+		<old_id>C016</old_id>
+	</device>
+
+	<device id="K201">
+		<type>Switch PB Square Black</type>
+		<name>Switch Lamp Test</name>
+		<old_id>C101</old_id>
+	</device>
+
+	<device id="K101">
+		<type>Breaker</type>
+		<name>Breaker CONTACTORS MORNITORING</name>
+		<old_id>C201</old_id>
+	</device>
+
+	<device id="K102">
+		<type>Breaker</type>
+		<name>Breaker AUX. INVERTER CONTROL SUPPLY</name>
+		<old_id>C202</old_id>
+	</device>
+
+	<device id="K103">
+		<type>Breaker</type>
+		<name>Breaker RIO VAVLE</name>
+		<old_id>C203</old_id>
+	</device>
+
+	<device id="K104">
+		<type>Breaker</type>
+		<name>Breaker GATEWAY VALVE</name>
+		<old_id>C204</old_id>
+	</device>
+
+	<device id="K105">
+		<type>Breaker</type>
+		<name>Breaker PARKING BRAKE VALVE</name>
+		<old_id>C205</old_id>
+	</device>
+
+	<device id="K106">
+		<type>Breaker</type>
+		<name>Breaker PNEUMATIC BRAKE CUT OUT</name>
+		<old_id>C206</old_id>
+	</device>
+
+	<device id="K107">
+		<type>Breaker</type>
+		<name>Breaker AUX. INV. MESSAGES</name>
+		<old_id>C207</old_id>
+	</device>
+
+	<device id="K108">
+		<type>Breaker</type>
+		<name>Breaker AUXILIARIES</name>
+		<old_id>C208</old_id>
+	</device>
+
+	<device id="K109">
+		<type>Breaker</type>
+		<name>Breaker SALOON LIGHT</name>
+		<old_id>C209</old_id>
+	</device>
+
+	<device id="K110">
+		<type>Breaker</type>
+		<name>Breaker EMERGENCY LIGHT</name>
+		<old_id>C210</old_id>
+	</device>
+
+	<device id="K111">
+		<type>Breaker</type>
+		<name>Breaker AIR CONDITION CONTROL</name>
+		<old_id>C211</old_id>
+	</device>
+
+	<device id="K112">
+		<type>Breaker</type>
+		<name>Breaker EMERGENCY VENTILATION</name>
+		<old_id>C212</old_id>
+	</device>
+
+	<device id="K113">
+		<type>Breaker</type>
+		<name>Breaker DOOR SUPPLY 1</name>
+		<old_id>C212</old_id>
+	</device>
+
+	<device id="K114">
+		<type>Breaker</type>
+		<name>Breaker DOOR SUPPLY 2</name>
+		<old_id>C213</old_id>
+	</device>
+
+	<device id="K115">
+		<type>Breaker</type>
+		<name>Breaker DOOR LOOP</name>
+		<old_id>C214</old_id>
+	</device>
+
+
+	<!--  driver desk -->
+	<device id="D201">
+		<type>switch pb square black</type>
+		<name>automatic reversing</name>
+		<old_id>D136</old_id>
+	</device>
+
+	<device id="D202">
+		<type>switch pb square green</type>
+		<name>atc start</name>
+		<old_id>D133</old_id>
+	</device>
+
+	<device id="D203">
+		<type></type>
+		<name>rm1 permissive</name>
+		<old_id>D134</old_id>
+	</device>
+
+	<device id="D204">
+		<type>switch pb permit</type>
+		<name>Door permissive</name>
+		<old_id>D135</old_id>
+	</device>
+
+	<device id="D205">
+		<type>switch pb square green</type>
+		<name>open door</name>
+		<old_id>D125</old_id>
+	</device>
+
+	<device id="D206">
+		<type>switch pb square red</type>
+		<name>close door</name>
+		<old_id>D126</old_id>
+	</device>
+
+	<device id="D207">
+		<type>switch pb square black</type>
+		<name>ptt</name>
+		<old_id>D127</old_id>
+	</device>
+
+	<device id="D208">
+		<type>switch pb square red</type>
+		<name>emergency intercom</name>
+		<old_id>D128</old_id>
+	</device>
+
+	<device id="D209">
+		<type>switch pb square yellow</type>
+		<name>cab to cab</name>
+		<old_id>D129</old_id>
+	</device>
+
+	<device id="D210">
+		<type>switch pb square black</type>
+		<name>cab to pa</name>
+		<old_id>D130</old_id>
+	</device>
+
+	<device id="D211">
+		<type>switch</type>
+		<name>emergency stop</name>
+		<old_id>D132</old_id>
+	</device>
+
+	<device id="D212">
+		<type>switch pb square black</type>
+		<name>horn</name>
+		<old_id></old_id>
+	</device>
+
+
+	<!-- start rv-0-wm-rm2 area -->
+	<device id="D213">
+		<type>switch rotary</type>
+		<name>mode selector</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D214">
+		<type>switch rotary</type>
+		<name>key switch</name>
+		<old_id></old_id>
+	</device>
+
+	<!--  end rv-0-wm-rm2 area-->
+	<device id="D215">
+		<type>lever</type>
+		<name>Driving/braking lever</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D216">
+		<type>switch pb square red</type>
+		<name>general fault</name>
+		<old_id>D101</old_id>
+	</device>
+
+	<device id="D217">
+		<type></type>
+		<name></name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D218">
+		<type>switch rotary red</type>
+		<name>parking brake</name>
+		<old_id>D102</old_id>
+	</device>
+
+	<device id="D219">
+		<type>switch yes-no black</type>
+		<name>pis sound</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D220">
+		<type>switch yes-no black</type>
+		<name>electric uncouple off-on</name>
+		<old_id>D105</old_id>
+	</device>
+
+	<device id="D221">
+		<type>switch pb square black</type>
+		<name>uncoupling</name>
+		<old_id>D106</old_id>
+	</device>
+
+	<device id="D222">
+		<type>switch yes-no black</type>
+		<name>pneumatic uncouple off-on</name>
+		<old_id>D107</old_id>
+	</device>
+
+	<device id="D223">
+		<type>switch</type>
+		<name>head-neutral-tail</name>
+		<old_id>D108</old_id>
+	</device>
+
+	<device id="D224">
+		<type>switch yes-no yellow</type>
+		<name>Desk light</name>
+		<old_id>D110</old_id>
+	</device>
+
+	<device id="D225">
+		<type>switch rotary yellow</type>
+		<name>saloon light</name>
+		<old_id>D112</old_id>
+	</device>
+
+	<device id="D226">
+		<type>switch yes-no yellow</type>
+		<name>Dimiter</name>
+		<old_id>D113</old_id>
+	</device>
+
+	<device id="D227">
+		<type>switch yes-no yellow</type>
+		<name>cab light</name>
+		<old_id>D114</old_id>
+	</device>
+
+	<device id="D228">
+		<type>switch yes-no black</type>
+		<name>wind shied washer off-on</name>
+		<old_id>D115</old_id>
+	</device>
+
+	<device id="D229">
+		<type>switch yes-no black</type>
+		<name>Dim - bright</name>
+		<old_id>D116</old_id>
+	</device>
+
+	<device id="D230">
+		<type>switch</type>
+		<name>wind shied wipper 0-1-2-3</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D231">
+		<type>switch</type>
+		<name>cab ventilation 0-3-2-1</name>
+		<old_id></old_id>
+	</device>
+
+	<device id="D233">
+		<type>switch</type>
+		<name>radio control button 1</name>
+		<old_id>D213</old_id>
+	</device>
+
+	<device id="D234">
+		<type>switch</type>
+		<name>radio control button 2</name>
+		<old_id>D214</old_id>
+	</device>
+
+	<device id="D235">
+		<type>switch</type>
+		<name>radio control button 3</name>
+		<old_id>D215</old_id>
+	</device>
+
+	<device id="D236">
+		<type>switch</type>
+		<name>radio control button 4</name>
+		<old_id>D216</old_id>
+	</device>
+
+	<device id="D237">
+		<type>led</type>
+		<name>led psi 1</name>
+		<old_id>D207</old_id>
+	</device>
+
+	<device id="D238">
+		<type>led</type>
+		<name>led psi 2</name>
+		<old_id>D208</old_id>
+	</device>
+
+	<device id="D239">
+		<type>lamp</type>
+		<name>lamp desk light</name>
+		<old_id>D203</old_id>
+	</device>
+
+	<device id="D240">
+		<type>lamp</type>
+		<name>lamp saloon light</name>
+		<old_id>D204</old_id>
+	</device>
+
+	<device id="D241">
+		<type>lamp</type>
+		<name>lamp dimiter</name>
+		<old_id>D205</old_id>
+	</device>
+
+	<device id="D242">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D206</old_id>
+	</device>
+
+	<device id="D243">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D201</old_id>
+	</device>
+
+	<device id="D244">
+		<type>lamp</type>
+		<name>lamp cab</name>
+		<old_id>D202</old_id>
+	</device>
+    
+	<device id="D245">
+		<type>lamp</type>
+		<name>lamp head</name>
+		<old_id>D226</old_id>
+	</device>
+    
+	<device id="D246">
+		<type>lamp</type>
+		<name>lamp tail</name>
+		<old_id>D227</old_id>
+	</device>
+
+	<device id="D247">
+		<type>lamp</type>
+		<name>lamp atc start</name>
+		<old_id>D209</old_id>
+	</device>
+    
+	<device id="D248">
+		<type>lamp</type>
+		<name>lamp general fault</name>
+		<old_id>D201</old_id>
+	</device>
+    
+	<device id="D249">
+		<type>lamp</type>
+		<name>lamp emergency intercom</name>
+		<old_id>D219</old_id>
+	</device>
+    
+	<device id="D250">
+		<type>lamp</type>
+		<name>lamp door open</name>
+		<old_id>D217</old_id>
+	</device>
+    
+	<device id="D251">
+		<type>lamp</type>
+		<name>lamp door close</name>
+		<old_id>D218</old_id>
+	</device>
+    
+	<device id="D252">
+		<type>lamp</type>
+		<name>lamp door close</name>
+		<old_id>D220</old_id>
+	</device>
+    
+	<device id="D254">
+		<type>lamp</type>
+		<name>lamp tail</name>
+		<old_id>D222</old_id>
+	</device>
+    
+	<device id="D255">
+		<type>lamp</type>
+		<name>lamp head</name>
+		<old_id>D223</old_id>
+	</device>
+    
+	<device id="D299">
+		<type>lamp</type>
+		<name>lamp all</name>
+		<old_id>D299</old_id>
+	</device>
+
+	<device id="D401">
+		<type>meter</type>
+		<name>speedo meter</name>
+		<old_id>D004</old_id>
+	</device>
+
+	<device id="D402">
+		<type>meter</type>
+		<name>volt meter</name>
+		<old_id>D003</old_id>
+	</device>
+
+	<device id="D403">
+		<type>meter</type>
+		<name>air pressure</name>
+		<old_id>D002</old_id>
+	</device>
+
+	<device id="D404">
+		<type>meter</type>
+		<name>air pressure</name>
+		<old_id>D001</old_id>
+	</device>
+
+</devices>
