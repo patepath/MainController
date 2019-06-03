@@ -345,13 +345,13 @@
 	<device id="E303">
 		<type>Valve B09</type>
 		<name>1/1</name>
-		<old_id>E303</old_id>
+		<old_id>E330</old_id>
 	</device>
 
 	<device id="E304">
 		<type>Valve B09</type>
 		<name>1/2</name>
-		<old_id>E304</old_id>
+		<old_id>E331</old_id>
 	</device>
 
 	<device id="E305">

@@ -234,6 +234,42 @@
 		<old_id>E208</old_id>
 	</device>
 	
+	<device id="E303">
+		<type>Valve B09</type>
+		<name>1/1</name>
+		<old_id>E303</old_id>
+	</device>
+
+	<device id="E304">
+		<type>Valve B09</type>
+		<name>1/2</name>
+		<old_id>E304</old_id>
+	</device>
+
+	<device id="E307">
+		<type>Valve B09</type>
+		<name>2/1</name>
+		<old_id>E307</old_id>
+	</device>
+
+	<device id="E308">
+		<type>Valve B09</type>
+		<name>2/2</name>
+		<old_id>E308</old_id>
+	</device>
+
+	<device id="E311">
+		<type>Valve B09</type>
+		<name>3/1</name>
+		<old_id>E311</old_id>
+	</device>
+
+	<device id="E312">
+		<type>Valve B09</type>
+		<name>3/2</name>
+		<old_id>E312</old_id>
+	</device>
+
 	<device id="E328">
 		<type>Parking Brake</type>
 		<name>1/1</name>

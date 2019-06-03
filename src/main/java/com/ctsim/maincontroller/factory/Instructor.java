@@ -50,6 +50,7 @@ public class Instructor extends PCControlPanel {
 				JSONObject jsonCmd = (JSONObject) new JSONParser().parse(cmd);
 				Iterator keys = jsonCmd.keySet().iterator();
 				String key;
+				//System.out.println(jsonCmd.toJSONString());
 
 				while (keys.hasNext()) {
 					key = (String) keys.next();
@@ -76,11 +77,12 @@ public class Instructor extends PCControlPanel {
 							break;
 
 						case "fault":
+							//System.out.println(jsonCmd.toJSONString());
 							handleFault((JSONObject) jsonCmd.get(key));
 							break;
 							
 						case "video":
-							msgOut.put("VIDEO", (JSONObject) jsonCmd.get(key));
+							msgOut.put("video", (JSONObject) jsonCmd.get(key));
 							break;
 
 					}
@@ -144,6 +146,24 @@ public class Instructor extends PCControlPanel {
 	}
 
 	private void handleFault(JSONObject cmd) {
+		msgATC.put("fault", cmd);
+	
+//		JSONObject atcMsg = new JSONObject();
+//
+//		if (msgIn != null) {
+//			Iterator keys = cmd.keySet().iterator();
+//			String key;
+//
+//			while (keys.hasNext()) {
+//				key = (String) keys.next();
+//
+//				switch(key.toLowerCase()) {
+//					case "emergencybrakeerror":
+//						msgATC.put("fault", key);
+//						break;
+//				}
+//			}
+//		}
 
 	}
 

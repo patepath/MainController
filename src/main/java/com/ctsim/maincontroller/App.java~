@@ -69,7 +69,7 @@ public class App {
 		private final JSONObject msgOut = new JSONObject();
 	
 	โครงสร้างของข้อมูลใน msgIn และ msgOut มีดังนี้
-
+	---------------------------------------
 
 		{<ชื่อ Node ปลายทาง>:{<OPTION>:<MESSAGE>}}
 	
@@ -140,7 +140,6 @@ public class App {
 						break;
 
 					case "VIDEO":
-
 						video.putMsg((JSONObject) msg.get(key));
 						break;
 

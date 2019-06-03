@@ -126,8 +126,6 @@ public class TrainEmuA implements Train {
 				sessions.replace(sessionName, null);
 			}
 		}
-
-		distributeMsg(atc.process());
 	}
 
 	private void processMsgIn() {
@@ -190,7 +188,7 @@ public class TrainEmuA implements Train {
 						break;
 
 					default:
-						msgOut.put(key, (JSONObject) msg.get(key));
+						msgOut.put(key, msg.get(key));
 				}
 			}
 		}

@@ -17,10 +17,6 @@ public interface ATC {
 
 	public void putMsg(JSONObject msg);
 
-	public JSONObject processMsg(JSONObject msg);
-
-	public JSONObject operate();
-
 	public void setMode(int mode);
 
 	public int getMode();

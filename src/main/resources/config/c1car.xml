@@ -28,7 +28,7 @@
 	<device id="K306">
 		<type>Lamp</type>
 		<name>Lamp Aux Converter</name>
-		<old_id>C005</old_id>
+		<old_id>C004</old_id>
 	</device>
 
 	<device id="K317">

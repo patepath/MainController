@@ -69,8 +69,7 @@ public class PCControlPanel {
 		try {
 			if (in.ready()) {
 				msg = in.readLine();
-				System.out.println("In : " + name + " - " + msg);
-
+				//System.out.println("In : " + name + " - " + msg);
 			}
 				
 			while (!msgToPC.isEmpty()) {
@@ -83,13 +82,13 @@ public class PCControlPanel {
 				} catch (InterruptedException ex) {
 				}
 
-				System.out.println("Out : " + name + " - " + msg);
+				//System.out.println("Out : " + name + " - " + msg);
 				msg = "";
 			}
 
 			if (Calendar.getInstance().getTimeInMillis() - startWatchDog.getTimeInMillis() > 2000) {
 				JSONObject cmd = new JSONObject();
-				cmd.put("WATCHDOG", 1);
+				cmd.put("watchdog", 1);
 				out.println(cmd.toJSONString());
 				checkError();
 				startWatchDog = Calendar.getInstance();

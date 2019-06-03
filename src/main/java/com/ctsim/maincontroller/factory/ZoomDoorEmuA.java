@@ -20,6 +20,7 @@ import org.json.simple.parser.ParseException;
 public class ZoomDoorEmuA extends PCControlPanel implements ControlPanel {
 
 	private final JSONObject msgDriverDesk = new JSONObject();
+	private final JSONObject msgATC = new JSONObject();
 
 	@Override
 	public void initDevices() {
@@ -28,6 +29,7 @@ public class ZoomDoorEmuA extends PCControlPanel implements ControlPanel {
 
 	@Override
 	public JSONObject process() {
+		msgATC.clear();
 		msgDriverDesk.clear();
 		msgOut.clear();
 
@@ -37,6 +39,7 @@ public class ZoomDoorEmuA extends PCControlPanel implements ControlPanel {
 			String cmd = getCmdFromSocket();
 
 			if (!cmd.equals("")) {
+
 				JSONObject json = (JSONObject) new JSONParser().parse(cmd);
 				Iterator keys = json.keySet().iterator();
 				String key;
@@ -50,9 +53,11 @@ public class ZoomDoorEmuA extends PCControlPanel implements ControlPanel {
 							break;
 
 						case "per":
+							handlePer((String) json.get(key));
 							break;
 
 						case "key":
+							handleKey((String) json.get(key));
 							break;
 					}
 				}
@@ -61,11 +66,32 @@ public class ZoomDoorEmuA extends PCControlPanel implements ControlPanel {
 		} catch (ParseException ex) {
 		}
 
+		if (!msgATC.isEmpty()) {
+			msgOut.put("ATC", msgATC);
+		}
+
 		if (!msgDriverDesk.isEmpty()) {
 			msgOut.put("DRIVERDESK", msgDriverDesk);
 		}
 
 		return msgOut;
+	}
+
+	private void handleKey(String isKOH) {
+		if(isKOH.equals("on")) {
+			JSONObject status = new JSONObject();
+			status.put("koh", true);
+			msgATC.put("status", status);
+		}
+	}
+
+	private void handlePer(String status) {
+		JSONObject fault = new JSONObject();
+
+		if(status.equals("on")) {
+			fault.put("PER", true);	
+			msgATC.put("fault", fault);
+		} 
 	}
 
 	private void handleDoor(String status) {

@@ -27,12 +27,21 @@ public class DMIEmuA extends PCControlPanel implements ControlPanel {
 
 	@Override
 	public JSONObject process() {
+		clearMsgOut();
+		processMsgIn();
+		processMsgSocket();
+		packMsgOut();
+
+		return msgOut;
+	}
+
+	private void clearMsgOut() {
 		msgLever.clear();
 		msgATC.clear();
 		msgOut.clear();
+	}
 
-		processMsgIn();
-
+	private void processMsgSocket() {
 		try {
 			JSONObject cmd = (JSONObject) new JSONParser().parse(getCmdFromSocket());
 			Iterator keys = cmd.keySet().iterator();
@@ -40,21 +49,25 @@ public class DMIEmuA extends PCControlPanel implements ControlPanel {
 
 			while (keys.hasNext()) {
 				key = (String) keys.next();
+				System.out.println("DMI : " + cmd.toJSONString());
 
-				switch (key) {
+				switch (key.toUpperCase()) {
 					case "ATC_MODE":
 						handleATCMode((int) (long) cmd.get(key));
 						break;
 
 					case "ATP_BRAKE":
-						msgLever.put("emergencybrake_active", (int) (long) cmd.get(key) != 0);
+						handleATPBrake((int) (long) cmd.get(key));
 						break;
+					
 				}
 			}
 
 		} catch (ParseException | NullPointerException ex) {
 		}
+	}
 
+	private void packMsgOut() {
 		if (!msgLever.isEmpty()) {
 			msgOut.put("LEVER", msgLever);
 		}
@@ -62,14 +75,18 @@ public class DMIEmuA extends PCControlPanel implements ControlPanel {
 		if (!msgATC.isEmpty()) {
 			msgOut.put("ATC", msgATC);
 		}
-
-		return msgOut;
 	}
 
 	private void handleATCMode(int status) {
 		JSONObject data = new JSONObject();
 		data.put("ATC_MODE", status);
 		msgATC.put("status", data);
+	}
+	
+	private void handleATPBrake(int status) {
+		if(status == 0) {
+			msgATC.put("cmd", "clear_atp_brake");
+		}
 	}
 
 	private void processMsgIn() {
@@ -98,27 +115,27 @@ public class DMIEmuA extends PCControlPanel implements ControlPanel {
 
 	private void handleCMD(String cmd) {
 		switch (cmd) {
-			case "turnoff":
-				handleShutdown();
+			case "turn_off":
+				handleCmdTurnOff();
 				break;
 
-			case "turnon":
-				handleStartUp();
+			case "turn_on":
+				handleCmdTurnOn();
 				break;
 		}
 	}
 
-	private void handleShutdown() {
+	private void handleCmdTurnOff() {
 		JSONObject cmd = new JSONObject();
 		cmd.put("IS_TURNON", false);
-		cmd.put("DMI", "OFF");
 		msgToPC.offer(cmd.toJSONString());
 	}
 
-	private void handleStartUp() {
+	private void handleCmdTurnOn() {
 		JSONObject cmd = new JSONObject();
 		cmd.put("IS_TURNON", true);
-		cmd.put("DMI", "ON");
+		cmd.put("ATP_BRAKE", 0);
+		cmd.put("ATENNA_STATUS", 1);
 		msgToPC.offer(cmd.toJSONString());
 	}
 }

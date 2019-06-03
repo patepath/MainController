@@ -40,6 +40,7 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 	private double motorForce;
 	private double trainSpeed, oldTrainSpeed = -1;
 	private long t1, t2;
+	private Calendar ebTime;
 
 	public LeverEmuA() {
 		t1 = Calendar.getInstance().getTimeInMillis();
@@ -60,51 +61,54 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 	}
 
     private void processSocketMessage() {
+		JSONObject cmd = new JSONObject();
 
-        if(isEnable) {
-            JSONObject cmd = new JSONObject();
+		try {
+			cmd = (JSONObject) new JSONParser().parse(getCmdFromSocket());
 
-            try {
+			if(isEnable) {
+				Iterator keys = cmd.keySet().iterator();
+				String key;
 
-                cmd = (JSONObject) new JSONParser().parse(getCmdFromSocket());
-                Iterator keys = cmd.keySet().iterator();
-                String key;
+				while (keys.hasNext()) {
+					key = (String) keys.next();
 
-                while (keys.hasNext()) {
-                    key = (String) keys.next();
+					switch (key) {
+						case "lever_value":
+							handleLeverValue((double) cmd.get(key));
+							break;
 
-                    switch (key) {
-                        case "lever_value":
-                            handleLeverValue((double) cmd.get(key));
-                            break;
+						case "lever_press":
+							handleLeverPressed((boolean) cmd.get(key));
+							break;
 
-                        case "lever_press":
-                            handleLeverPressed((boolean) cmd.get(key));
-                            break;
+						case "lever_position":
+							handleLeverPosition((String) cmd.get(key));
+							break;
+					}
+				}
 
-                        case "lever_position":
-                            handleLeverPosition((String) cmd.get(key));
-                            break;
-                    }
-                }
-            } catch (ParseException | NullPointerException ex) {
-            }
+				// Send lever information to ATC
+				if (!cmd.isEmpty()) {
+					msgATC.put("status", cmd);
+				}
+				
+			}
+		} catch (ParseException | NullPointerException ex) {
+		}
+		
+		// Check Dead-man Release over 3 secs
+		if(cmdBuzzer.equals("ON")) {
+			cmd = new JSONObject();
+			
+			if(!isEB & Calendar.getInstance().getTimeInMillis() - ebTime.getTimeInMillis() > 3000) {
+				isEB = true;
+				msgATC.put("cmd", "emergency_brake");
+			}
 
-            if (!cmd.isEmpty()) {
-                msgATC.put("status", cmd);
-
-                if (!msgATC.isEmpty()) {
-                    msgOut.put("ATC", msgATC);
-                }
-            }
-
-        } else {
-            handleLeverValue(0.0);
-            handleLeverPressed(true);
-            handleLeverPosition("0");
-        }
-
-        handleLever();
+		} else {
+			ebTime = Calendar.getInstance();
+		}
     }
 
     private void clearMsgs() {
@@ -119,30 +123,35 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
     }
 
     private void chkMsg(){
-        if (!msgAcar.isEmpty()) {
-            msgOut.put("ACAR", msgAcar);
-        }
+		if(msgOut != null) {
+			if (!msgATC.isEmpty()) {
+				msgOut.put("ATC", msgATC);
+			}
 
-        if (!msgDriverDesk.isEmpty()) {
-            msgOut.put("DRIVERDESK", msgDriverDesk);
-        }
+			if (!msgAcar.isEmpty()) {
+				msgOut.put("ACAR", msgAcar);
+			}
 
-        if (!msgDMI.isEmpty()) {
-            msgOut.put("DMI", msgDMI);
-        }
+			if (!msgDriverDesk.isEmpty()) {
+				msgOut.put("DRIVERDESK", msgDriverDesk);
+			}
 
-        if (!msgTRAINMODEL1.isEmpty()) {
-            msgOut.put("TRAINMODEL1", msgTRAINMODEL1);
-        }
+			if (!msgDMI.isEmpty()) {
+				msgOut.put("DMI", msgDMI);
+			}
 
-        if (!msgDummyBogie.isEmpty()) {
-            msgOut.put("DUMMYBOGIE", msgDummyBogie);
-        }
+			if (!msgTRAINMODEL1.isEmpty()) {
+				msgOut.put("TRAINMODEL1", msgTRAINMODEL1);
+			}
 
-        if (!msgVideo.isEmpty()) {
-            msgOut.put("VIDEO", msgVideo);
-        }
+			if (!msgDummyBogie.isEmpty()) {
+				msgOut.put("DUMMYBOGIE", msgDummyBogie);
+			}
 
+			if (!msgVideo.isEmpty()) {
+				msgOut.put("VIDEO", msgVideo);
+			}
+		}
     }
 
 	private void handleLeverValue(double value) {
@@ -151,22 +160,22 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 
 	private void handleLeverPressed(boolean isPressed) {
 		isLeverPressed = isPressed;
-		JSONObject status = new JSONObject();
-
-		if (trainSpeed > 0 & !isLeverPressed) {
-			if (!cmdBuzzer.equals("ON")) {
-				cmdBuzzer = "ON";
-				status.put("deadman_released", true);
-				msgAcar.put("status", status);		// tell A-Car deadman is released.
-			}
-
-		} else {
-			if (!cmdBuzzer.equals("OFF")) {
-				cmdBuzzer = "OFF";
-				status.put("deadman_released", false);
-				msgAcar.put("status", status);			// tell A-Car deadman is released.
-			}
-		}
+//		JSONObject status = new JSONObject();
+//
+//		if (trainSpeed > 0 & !isLeverPressed) {
+//			if (!cmdBuzzer.equals("ON")) {
+//				cmdBuzzer = "ON";
+//				status.put("deadman_released", true);
+//				msgAcar.put("status", status);			// tell A-Car deadman is released.
+//			}
+//
+//		} else {
+//			if(!cmdBuzzer.equals("OFF")) {
+//				cmdBuzzer = "OFF";
+//				status.put("deadman_released", false);
+//				msgAcar.put("status", status);			// tell A-Car deadman is released.
+//			}
+//		}
 	}
 
 	private void handleLeverPosition(String position) {
@@ -178,14 +187,17 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 				status.put("lever_position", 1);
 				msgAcar.put("status", status);
 				break;
+
 			case "0":
 				status.put("lever_position", 2);
 				msgAcar.put("status", status);
 				break;
+				
 			case "B":
 				status.put("lever_position", 3);
 				msgAcar.put("status", status);
 				break;
+
 			case "EB":
 				isEB = true;
 				status.put("emergencybrake_active", true);
@@ -194,82 +206,10 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 				status.put("ATP_BRAKE", 1);
 				msgDMI.put("status", status);		// show ATP Brake icon at DMI.
 				break;
+
 			default:
 				break;
 		}
-	}
-
-	private void calMotorForce() {		// calculate force and save to "motorForce"
-		if (isEB) {
-			motorForce -= EB_FORCE;
-
-		} else {
-			switch (leverPosition) {
-				case "D":
-					motorForce = MAX_FORCE * leverValue / 100;
-					break;
-				case "0":
-					motorForce = 0;
-					break;
-				case "B":
-					motorForce = MAX_FORCE * leverValue / -100;
-					break;
-				default:
-					break;
-			}
-		}
-	}
-
-	private void sendSpeedValue() {
-		if (trainSpeed != oldTrainSpeed) {
-			JSONObject status = new JSONObject();
-			status.put("SPEED", trainSpeed);
-
-			if (trainSpeed == 0.0) {
-				msgAcar.put("status", status);
-
-				if (isEB) {
-					status.put("ATP_BRAKE", 2);
-				}
-			}
-
-			msgDriverDesk.put("SPEED", trainSpeed);
-			msgDMI.put("status", status);
-			msgTRAINMODEL1.put("SPEED", trainSpeed);
-			msgDummyBogie.put("SPEED", trainSpeed);
-			msgVideo.put("SPEED", trainSpeed);
-
-			oldTrainSpeed = trainSpeed;
-		}
-	}
-
-	private void calSpeedValue() {		// calculate speed and save to "trainSpeed"
-		long diffTime = t2 - t1;
-		trainSpeed += ((motorForce - getFriction(trainSpeed)) * diffTime) / (1000 * TRAIN_WEIGHT);		// v = at1 + at2
-
-		if (trainSpeed > 77) {
-			trainSpeed = 77.0;
-
-		} else if (trainSpeed < 0) {
-			trainSpeed = 0.0;
-		}
-
-		t1 = t2;
-	}
-
-	private void handleLever() {
-
-		t2 = Calendar.getInstance().getTimeInMillis();
-
-		if (t2 - t1 > 250) {		// calculate every 250 ms.
-			calMotorForce();		// calculate force and save to "motorForce"
-			calSpeedValue();		// calculate speed and save to "trainSpeed"
-			sendSpeedValue();
-		}
-	}
-
-	private double getFriction(double speed) {
-		return (-1 * speed + 100) / 100 * (0.2 * MAX_FORCE);
 	}
 
 	private void processMsgIn() {
@@ -280,8 +220,21 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 			key = (String) keys.next();
 
 			switch (key) {
-				case "emergencybrake_active":
+				case "startup":
+					isEnable = true;
+					isEB = false;
+					break;
+
+				case "speed":
+					trainSpeed = (double) msgIn.get(key);
+					break;
+
+				case "emergency_brake":
 					isEB = (boolean) msgIn.get(key);
+					break;
+
+				case "clear_emergency_brake":
+					isEB = false;
 					break;
 
                 case "enable":
@@ -291,7 +244,4 @@ public class LeverEmuA extends PCControlPanel implements ControlPanel {
 		}
 	}
 
-//	private void handleEB(boolean isActive) {
-//		isEB = isActive;
-//	}
 }

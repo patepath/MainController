@@ -29,9 +29,9 @@ public class DummyBogieEmuA extends PCControlPanel implements ControlPanel {
 		String value;
 
 		while (keys.hasNext()) {
-			key = (String) keys.next();
+			key = ((String) keys.next()).toLowerCase();
 
-			if (key.equals("SPEED")) {
+			if (key.equals("speed")) {
 				value = String.valueOf(msgIn.get(key));
 				msgToPC.offer(value);
 			}

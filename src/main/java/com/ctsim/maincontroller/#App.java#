@@ -1,0 +1,101 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.ctsim.maincontroller;
+
+import com.ctsim.maincontroller.factory.Instructor;
+import com.ctsim.maincontroller.interfaces.Train;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.json.simple.JSONObject;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ *
+ * @author Patipat Punboonrat
+ */
+public class App {
+
+	private final ApplicationContext context = new ClassPathXmlApplicationContext("config/app_beans.xml");
+	private final Map<String, Socket> sessions = new HashMap<>();
+	private final BlockingQueue<JSONObject> msgs = new LinkedBlockingQueue<>();
+
+	private final Train train;
+	private final Instructor instructor;
+
+	public App() {
+		train = (Train) context.getBean("train");
+		instructor = (Instructor) context.getBean("instructor");
+	}
+
+	public void run() {
+		try {
+			new Thread(new Communication(sessions)).start();
+			train.setSessions(sessions);
+			instructor.setSessions(sessions);
+
+			while (true) {
+				distributeMsg(train.process());
+				distributeMsg(instructor.process());
+				
+				try {
+					Thread.sleep(10);
+				} catch (InterruptedException ex) {
+					Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+				}
+			}
+		} catch (IOException ex) {
+			Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+		}
+	}
+
+	private void distributeMsg(JSONObject msg) {
+		if (msg != null) {
+			Iterator keys = msg.keySet().iterator();
+			String key;
+
+			while (keys.hasNext()) {
+				key = (String) keys.next();
+
+				switch (key) {
+					case "TRAIN":
+						train.putMsg((JSONObject) msg.get(key));
+						break;
+
+					case "INSTRUCTOR":
+						instructor.putMsg((JSONObject) msg.get(key));
+						break;
+				}
+			}
+	
+
+
+
+
+
+
+	}
+	}
+
+	private void collectMsg(JSONObject msg) {
+		if (msg != null) {
+			msgs.offer(msg);
+		}
+	}
+
+	public static void main(String[] argc) {
+		App app = new App();
+		app.run();
+	}
+
+}

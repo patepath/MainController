@@ -24,16 +24,34 @@
 		<name>Door permissive</name>
 		<old_id>D135</old_id>
 	</device>
-
-	<device id="D205">
+	
+	<device id="D205R">
 		<type>Switch</type>
-		<name>open door</name>
+		<name>open door right</name>
+		<old_id>D122</old_id>
+	</device>
+
+	<device id="D206R">
+		<type>Switch</type>
+		<name>close door right</name>
+		<old_id>D123</old_id>
+	</device>
+
+	<device id="D124">
+		<type>Switch</type>
+		<name>Door Permissive</name>
+		<old_id>D124</old_id>
+	</device>
+
+	<device id="D205L">
+		<type>Switch</type>
+		<name>open door left</name>
 		<old_id>D125</old_id>
 	</device>
 
-	<device id="D206">
+	<device id="D206L">
 		<type>Switch</type>
-		<name>close door</name>
+		<name>close door left</name>
 		<old_id>D126</old_id>
 	</device>
 
@@ -100,7 +118,7 @@
 	<device id="D219">
 		<type>Switch</type>
 		<name>pis sound</name>
-		<old_id></old_id>
+		<old_id>D104</old_id>
 	</device>
 
 	<device id="D220">
@@ -121,10 +139,16 @@
 		<old_id>D107</old_id>
 	</device>
 
-	<device id="D223">
+	<device id="D223_head">
 		<type>Switch</type>
 		<name>head-neutral-tail</name>
 		<old_id>D108</old_id>
+	</device>
+
+	<device id="D223_tail">
+		<type>Switch</type>
+		<name>head-neutral-tail</name>
+		<old_id>D109</old_id>
 	</device>
 
 	<device id="D224">
@@ -184,36 +208,36 @@
 	<device id="D233">
 		<type>Switch</type>
 		<name>radio control button 1</name>
-		<old_id></old_id>
+		<old_id>D137</old_id>
 	</device>
 
 	<device id="D234">
 		<type>Switch</type>
 		<name>radio control button 2</name>
-		<old_id></old_id>
+		<old_id>D138</old_id>
 	</device>
 
 	<device id="D235">
 		<type>Switch</type>
 		<name>radio control button 3</name>
-		<old_id></old_id>
+		<old_id>D139</old_id>
 	</device>
 
 	<device id="D236">
 		<type>Switch</type>
 		<name>radio control button 4</name>
-		<old_id></old_id>
+		<old_id>D140</old_id>
 	</device>
 
 	<device id="D237">
 		<type>led</type>
-		<name>led psi 1</name>
+		<name>led pis on</name>
 		<old_id>D207</old_id>
 	</device>
 
 	<device id="D238">
 		<type>led</type>
-		<name>led psi 2</name>
+		<name>led pis off</name>
 		<old_id>D208</old_id>
 	</device>
 
@@ -301,16 +325,22 @@
 		<old_id>D220</old_id>
 	</device>
 	
+	<device id="D253">
+		<type>Buzzer</type>
+		<name>Dead-man Release</name>
+		<old_id>D221</old_id>
+	</device>
+	
 	<device id="D254">
 		<type>lamp</type>
 		<name>lamp tail</name>
-		<old_id>D222</old_id>
+		<old_id>D226</old_id>
 	</device>
 	
 	<device id="D255">
 		<type>lamp</type>
 		<name>lamp head</name>
-		<old_id>D223</old_id>
+		<old_id>D227</old_id>
 	</device>
 	
 	<device id="D299">

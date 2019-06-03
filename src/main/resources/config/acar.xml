@@ -252,7 +252,7 @@
 	<device id="A209">
 		<type>Switch</type>
 		<name>AIR CONDITIONING Rotary</name>
-		<old_id></old_id>
+		<old_id>A109</old_id>
 	</device>
 
 	<device id="A209_OFF">
@@ -273,10 +273,16 @@
 		<old_id>A111</old_id>
 	</device>
 
-	<device id="A211">
+	<device id="A210_OFF">
 		<type>Switch</type>
-		<name>CURRENT COLLECTOR SHOES Rotary</name>
-		<old_id></old_id>
+		<name>AIR RECIRCULATION Rotary</name>
+		<old_id>A111</old_id>
+	</device>
+
+	<device id="A210_ON">
+		<type>Switch</type>
+		<name>AIR RECIRCULATION Rotary</name>
+		<old_id>A112</old_id>
 	</device>
 
 	<device id="A211_OFF">
@@ -414,7 +420,7 @@
 	<device id="A312">
 		<type>Lamp</type>
 		<name>LOW AIR PRESS</name>
-		<old_id>A221</old_id>
+		<old_id>A212</old_id>
 	</device>
 
 	<device id="A313">
@@ -652,6 +658,12 @@
 		<type>Lamp</type>
 		<name>LAMP AUXILIARIES Equipment ROTARY</name>
 		<old_id>A250</old_id>
+	</device>
+
+	<device id="A251">
+		<type>Lamp</type>
+		<name>AIR COND. Saloon</name>
+		<old_id>A251</old_id>
 	</device>
 
 	<device id="A399">

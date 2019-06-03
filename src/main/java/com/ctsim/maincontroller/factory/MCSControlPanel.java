@@ -117,7 +117,7 @@ public class MCSControlPanel {
 						out.println(cmd);
 						checkError();
 
-						System.out.println("Out : " + name + " - " + cmd);     // Console print
+						//System.out.println("Out : " + name + " - " + cmd);     // Console print
 
 						try {
 							Thread.sleep(5);
@@ -126,7 +126,7 @@ public class MCSControlPanel {
 					}
 
 				} else if (msgControlPanelIn.startsWith(prefixChar) & msgControlPanelIn.length() == 7) {
-					System.out.println("In : " + name + " - " + msgControlPanelIn);		// Console print
+					//System.out.println("In : " + name + " - " + msgControlPanelIn);		// Console print
 
 					id = getNewByOld.get(msgControlPanelIn.split(" ")[0]);
 
