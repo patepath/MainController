@@ -917,12 +917,12 @@ public class ACarEmuA extends MCSControlPanel implements ControlPanel {
         now = Calendar.getInstance();
         System.out.println(sdf.format(now.getTime()) + " Auxiliaries Control : Tripped");
 
-        if (dev.get("status").equals("0")) {
-            msgATC.put("cmd", "shutdown");
-
-        } else {
-            msgATC.put("cmd", "startup");
-        }
+//        if (dev.get("status").equals("0")) {
+//            msgATC.put("cmd", "shutdown");
+//
+//        } else {
+//            msgATC.put("cmd", "startup");
+//        }
     }
 
     private void doA115(JSONObject dev) {		//Breaker : Instruments 24 V
